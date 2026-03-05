@@ -1,5 +1,5 @@
-# template
+# Repository Template
 
-core template
+Core repository template.
 
-Copy this repository when creating a new repo
+Copy this repository when creating a new repo.
