@@ -1,16 +1,18 @@
 <a id="readme-top"></a>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
 <div align="center">
-  <h1>Repository Template</h1>
-  <p>Copy this repository when creating a new repo in FTN.</p>
-  <p>
+  <a href="https://github.com/FoodTruckNerdz/template/graphs/contributors"><img src="https://img.shields.io/github/contributors/FoodTruckNerdz/template.svg?style=for-the-badge" alt="Contributors"></a>
+  <a href="https://github.com/FoodTruckNerdz/template/network/members"><img src="https://img.shields.io/github/forks/FoodTruckNerdz/template.svg?style=for-the-badge" alt="Forks"></a>
+  <a href="https://github.com/FoodTruckNerdz/template/stargazers"><img src="https://img.shields.io/github/stars/FoodTruckNerdz/template.svg?style=for-the-badge" alt="Stargazers"></a>
+  <a href="https://github.com/FoodTruckNerdz/template/issues"><img src="https://img.shields.io/github/issues/FoodTruckNerdz/template.svg?style=for-the-badge" alt="Issues"></a>
+
+  <h3 align="center">Repository Template</h3>
+
+  <p align="center">
+    Copy this repository when creating a new repo in FTN.
+    <br />
+    <br />
     <a href="https://github.com/FoodTruckNerdz/template/issues">Report Bug</a>
-    ·
+    &middot;
     <a href="https://github.com/FoodTruckNerdz/template/issues">Request Feature</a>
   </p>
 </div>
@@ -42,12 +44,3 @@ Site: https://www.foodtrucknerdz.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/FoodTruckNerdz/template.svg?style=for-the-badge
-[contributors-url]: https://github.com/FoodTruckNerdz/template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/FoodTruckNerdz/template.svg?style=for-the-badge
-[forks-url]: https://github.com/FoodTruckNerdz/template/network/members
-[stars-shield]: https://img.shields.io/github/stars/FoodTruckNerdz/template.svg?style=for-the-badge
-[stars-url]: https://github.com/FoodTruckNerdz/template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/FoodTruckNerdz/template.svg?style=for-the-badge
-[issues-url]: https://github.com/FoodTruckNerdz/template/issues
