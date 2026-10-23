@@ -1,4 +1,19 @@
-# OS files
+# Allow-list gitignore: everything is ignored unless explicitly un-ignored.
+# When adding a new root file or directory, add a `!` entry here.
+
+*
+!*/
+
+# Tracked root files and directories
+!/.editorconfig
+!/.gitattributes
+!/.github/**
+!/.gitignore
+!/.hintrc
+!/dprint.jsonc
+!/README.md
+
+# Re-ignore generated and local files inside allowed directories
 .DS_Store
 .DS_Store?
 ._*
@@ -7,8 +22,6 @@
 ehthumbs.db
 Thumbs.db
 Desktop.ini
-
-# IDE / Editor files
 .idea/
 *.swp
 *.swo
@@ -18,30 +31,20 @@ Desktop.ini
 .settings/
 *.sublime-project
 *.sublime-workspace
-
-# Common build/cache directories
 dist/
 build/
 .cache/
 .temp/
 .tmp/
-
-# Log files
 *.log 
 logs/
-
-# Environment files
 .env
 .env.local
 .env.*.local
-
-# Temporary/backup files
 *.tmp
 *.bak
 *.backup
 *.old
-
-# Coverage/test artifacts
 .coverage/
 coverage/
 .nyc_output/
