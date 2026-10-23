@@ -1,0 +1,17 @@
+= 2026-10-23 — Allow-list `.gitignore`
+
+== Summary
+
+The template `.gitignore` now uses an allow-list: ignore everything (`*`), allow directory traversal (`!*/`), then un-ignore only known root paths (`!/.github/**`, `!/docs/**`, and so on). A trailing section re-ignores OS, IDE, build, env, and coverage artifacts inside allowed trees.
+
+== Motivation
+
+FoodTruckNerdz agent rules prefer allow-list gitignore files so new repositories do not accidentally track caches, credentials, or local tooling. The previous deny-list file was easy to extend but did not enforce the same default-deny posture.
+
+== Operator impact
+
+Anyone adding a new top-level file or directory must add a `!` rule before `git add` will pick it up. See xref:../gitignore-allow-list.adoc[Allow-list `.gitignore`].
+
+== Pull request
+
+https://github.com/FoodTruckNerdz/template/pull/1

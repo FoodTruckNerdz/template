@@ -1,0 +1,27 @@
+= Using the template
+
+== Create a repository
+
+. Open link:https://github.com/FoodTruckNerdz/template[template] on GitHub.
+. Choose **Use this template** and pick the new repository name and visibility.
+. Clone the new repository locally.
+
+== Customize metadata
+
+Update at least:
+
+* `README.adoc` (and `README.md` if you keep a GitHub-oriented copy) — project title, description, and links
+* `docs/antora.yml` — `name` and `title` for the Antora component (use a short `name` for URLs)
+* `docs/modules/ROOT/pages/index.adoc` — product overview for the docs site
+
+Keep the centered header pattern in `README.adoc` (Docs badge, CI badge when workflows exist, table of contents when you have more than three sections).
+
+== Register documentation on the hub site
+
+After your `docs/` folder exists on the default branch, add a content source entry to the `FoodTruckNerdz/docs` playbook (`antora-playbook.yml`), following the same `url` / `branches: HEAD` / `start_path: docs` shape as other components.
+
+Until that merge ships, your component builds only from a local Antora run against your clone.
+
+== Formatting
+
+Root `dprint.jsonc` configures dprint for consistent formatting. Run dprint in CI or locally before you push.

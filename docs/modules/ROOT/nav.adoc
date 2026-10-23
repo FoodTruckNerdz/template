@@ -1,0 +1,5 @@
+* xref:index.adoc[Overview]
+* xref:using-the-template.adoc[Using the template]
+* xref:gitignore-allow-list.adoc[Allow-list `.gitignore`]
+* xref:ci-and-quality.adoc[CI and quality]
+* xref:changelog.adoc[Changelog]

@@ -1,0 +1,47 @@
+= Allow-list `.gitignore`
+
+The template ignores everything by default, then explicitly un-ignores paths that belong in git.
+
+== Why allow-list
+
+Deny-by-default reduces accidental commits of build output, secrets, and machine-local files. When you add a new tracked file or directory at the repository root, you must add a matching `!` rule in `.gitignore`.
+
+== Structure
+
+[source,gitignore]
+----
+# Allow-list gitignore: everything is ignored unless explicitly un-ignored.
+# When adding a new root file or directory, add a `!` entry here.
+
+*
+!*/
+
+# Tracked root files and directories
+!/.editorconfig
+!/.github/**
+!/docs/**
+# ... project-specific entries ...
+----
+
+`*` ignores all files. `!*/` re-allows directories so nested un-ignore rules can apply.
+
+The block after the allow-list re-ignores common junk (OS metadata, IDE folders, `dist/`, `.env`, logs, coverage) even inside allowed directories.
+
+== Checklist for new paths
+
+When you add something new:
+
+. Decide whether it should be tracked.
+. Add `!/path/to/item` (or `!/dirname/**` for a tree) under **Tracked root files and directories**.
+. If the path is generated or local-only, do **not** un-ignore it; rely on the re-ignore rules instead.
+. Commit `.gitignore` in the same change set as the new files so CI and teammates see a consistent tree.
+
+== Common mistakes
+
+* Forgetting `!` for a new root folder — `git status` stays empty even after `git add`.
+* Un-ignoring `build/` or `.env` — prefer keeping those covered by the re-ignore section.
+* Adding only `!/src` without `!*/` — the allow-list pattern requires directories to be traversable.
+
+== History
+
+xref:changelog.adoc#2026-10-23--allow-list-gitignore[2026-10-23 — Allow-list `.gitignore`] replaced the earlier deny-list ignore file.

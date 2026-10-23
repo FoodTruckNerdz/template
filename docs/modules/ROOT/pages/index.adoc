@@ -1,0 +1,22 @@
+= FoodTruckNerdz repository template
+
+Copy link:https://github.com/FoodTruckNerdz/template[FoodTruckNerdz/template] when you create a new repository in the organization.
+
+== What you get
+
+* Shared root files (`.editorconfig`, `.gitattributes`, `dprint.jsonc`, `.hintrc`)
+* GitHub configuration under `.github/` (Dependabot, encoding guard workflow)
+* An allow-list `.gitignore` so only intentional paths are tracked
+* This Antora component (`docs/`) published on the https://docs.foodtrucknerdz.com[FTN documentation site] after the playbook lists this repository
+
+== Next steps
+
+. Use GitHub **Use this template** (or duplicate the repository) for your new project.
+. Follow xref:using-the-template.adoc[Using the template] to rename metadata and extend the allow-list.
+. Read xref:gitignore-allow-list.adoc[Allow-list `.gitignore`] before adding new top-level files or folders.
+
+== Related links
+
+* Organization site: https://www.foodtrucknerdz.com/
+* Documentation hub: https://docs.foodtrucknerdz.com
+* Contact: support@foodtrucknerdz.com

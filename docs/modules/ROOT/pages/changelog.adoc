@@ -1,0 +1,45 @@
+= Changelog
+:description: Functional history of the FoodTruckNerdz repository template
+
+[[2026-10-23--allow-list-gitignore]]
+== 2026-10-23 — Allow-list `.gitignore`
+
+* Replaced deny-list ignores with an allow-list pattern (`*` then explicit `!` entries).
+* Documented the workflow in xref:gitignore-allow-list.adoc[Allow-list `.gitignore`].
+* Details: xref:changelog-details/2026-10-23--allow-list-gitignore.adoc[]
+
+[[2026-10-06--dependabot-actions]]
+== 2026-10-06 — Dependabot for GitHub Actions
+
+* Monthly grouped Dependabot updates for Actions workflow pins.
+
+[[2026-10-05--encoding-guard]]
+== 2026-10-05 — Encoding guard CI
+
+* Added UTF-8 mojibake check via `dev-centr/agent-rules` reusable workflow.
+* Details: xref:changelog-details/2026-10-05--encoding-guard.adoc[]
+
+[[2026-08-07--readme-header]]
+== 2026-08-07 — README header layout
+
+* Centered GitHub HTML header with linked shields in `README.md`.
+
+[[2026-06-13--dprint]]
+== 2026-06-13 — dprint configuration
+
+* Added root `dprint.jsonc` for shared formatting defaults.
+
+[[2026-03-05--github-scaffold]]
+== 2026-03-05 — GitHub and quality scaffold
+
+* Added `.github/`, `.gitignore`, `.hintrc`, and README updates.
+
+[[2025-11-03--rename]]
+== 2025-11-03 — Template rename
+
+* Renamed from `basic-template` / `common-template` lineage; README cleanup.
+
+[[2025-07-12--initial]]
+== 2025-07-12 — Initial template
+
+* `.gitattributes` and initial repository commit.

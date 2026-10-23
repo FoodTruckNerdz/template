@@ -11,7 +11,9 @@
 !/.gitignore
 !/.hintrc
 !/dprint.jsonc
+!/README.adoc
 !/README.md
+!/docs/**
 
 # Re-ignore generated and local files inside allowed directories
 .DS_Store
