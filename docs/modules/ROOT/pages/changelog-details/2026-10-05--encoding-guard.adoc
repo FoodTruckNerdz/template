@@ -1,0 +1,13 @@
+= 2026-10-05 — Encoding guard CI
+
+== Summary
+
+Added `.github/workflows/encoding-guard.yml`, which calls the reusable `encoding-guard` workflow from `dev-centr/agent-rules` on pull requests and on pushes to `main`.
+
+== Behavior
+
+The job scans tracked text for double-encoded UTF-8 sequences (common when Windows PowerShell 5.1 mishandles Unicode). Failures block merge until the text is fixed or explicitly allowed per agent-rules documentation.
+
+== Related docs
+
+xref:../ci-and-quality.adoc[CI and quality]

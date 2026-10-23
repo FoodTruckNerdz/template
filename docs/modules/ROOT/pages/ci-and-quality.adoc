@@ -1,0 +1,21 @@
+= CI and quality
+
+== Encoding guard
+
+Workflow: `.github/workflows/encoding-guard.yml`
+
+On every pull request and on pushes to `main`, CI runs the reusable workflow from `dev-centr/agent-rules` to detect double-encoded UTF-8 (mojibake) in tracked text files.
+
+Locally, prefer UTF-8 without BOM and avoid legacy PowerShell 5.1 redirection when editing Unicode text. Intentional test strings can use an allow marker documented in the agent-rules encoding guard tooling.
+
+== Dependabot
+
+`.github/dependabot.yml` schedules monthly grouped updates for GitHub Actions references so workflow pins stay current without noisy one-action PR floods.
+
+== Editor and lint hints
+
+* `.editorconfig` — baseline indentation and charset expectations
+* `.hintrc` — webhint configuration when you add HTML or front-end assets
+* `dprint.jsonc` — shared formatter config for supported languages
+
+Add repository-specific CI (test, build, deploy) when the project grows; keep a workflow badge in `README.adoc` next to the encoding guard badge.
